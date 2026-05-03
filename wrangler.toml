@@ -6,8 +6,7 @@ compatibility_date = "2024-01-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "chatroom-db"
-database_id = "YOUR_DATABASE_ID"  # 创建数据库后替换这里
-
+database_id = "3ff87e32-8f63-4d1b-a50f-3ce65d73932f"
 # 本地开发配置
 [dev]
 port = 8787
