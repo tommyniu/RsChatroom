@@ -92,7 +92,6 @@
             height: 470px;
         }
 
-        /* 消息布局还原 - 头像/名称/UID 正常显示 */
         .msg-item {
             max-width: 75%;
             width: fit-content;
@@ -271,6 +270,9 @@
 </div>
 
 <script>
+    // 👉 我已经帮你改成你的 Worker API 地址
+    const API = "https://rs-api.ltc114514191.workers.dev";
+
     let username = localStorage.getItem('username') || '';
     let userUID = localStorage.getItem('uid') || '';
     let lastMsgCount = 0;
@@ -284,7 +286,7 @@
         const pwd = document.getElementById('pwd').value;
         if (!user || !pwd) return alert('请输入账号密码');
 
-        const res = await fetch('/api/login', {
+        const res = await fetch(API + "/api/login", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ user, pwd })
@@ -316,7 +318,7 @@
     async function sendMsg() {
         const msg = document.getElementById('msgInput').value;
         if (!msg) return;
-        await fetch('/api/send', {
+        await fetch(API + "/api/send", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ user: username, uid: userUID, msg })
@@ -325,7 +327,7 @@
     }
 
     async function syncMsg() {
-        const res = await fetch('/api/msg');
+        const res = await fetch(API + "/api/msg");
         const list = await res.json();
         const box = document.getElementById('msgBox');
         const isNew = list.length > lastMsgCount;
@@ -359,7 +361,7 @@
         const user = document.getElementById('user').value;
         const pwd = document.getElementById('pwd').value;
         if (!user || !pwd) return alert('请输入账号密码');
-        const res = await fetch('/api/reg', {
+        const res = await fetch(API + "/api/reg", {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ user, pwd })
@@ -369,7 +371,7 @@
 
     async function clearAllMsg() {
         if (!confirm('确定清空？')) return;
-        await fetch('/api/clear');
+        await fetch(API + "/api/clear");
         alert('已清空');
     }
 </script>
