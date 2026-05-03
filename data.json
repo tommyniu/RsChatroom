@@ -1,0 +1,90 @@
+{
+  "users": [
+    {
+      "user": "RatStudio",
+      "pwd": "LTC505666",
+      "uid": 1
+    },
+    {
+      "user": "Hz",
+      "pwd": "1",
+      "uid": 2
+    },
+    {
+      "user": "1",
+      "pwd": "1",
+      "uid": 3
+    }
+  ],
+  "msg": [
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "，，"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "可"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "测试"
+    },
+    {
+      "user": "RatStudio",
+      "uid": "1",
+      "msg": "，，"
+    }
+  ],
+  "posts": [
+    {
+      "postId": 1,
+      "uid": "1",
+      "user": "RatStudio",
+      "title": "欢迎",
+      "content": "V1.2.0版本更新了论坛功能，欢迎来测试和提出建议！",
+      "like": 1,
+      "time": "2026/4/11 14:28:05"
+    },
+    {
+      "postId": 2,
+      "uid": "1",
+      "user": "RatStudio",
+      "title": "欢迎",
+      "content": "V1.2.0更新了论坛功能，欢迎来测试和提出建议！",
+      "like": 0,
+      "time": "2026/4/11 14:42:52"
+    }
+  ],
+  "likes": [
+    "1:1"
+  ],
+  "postIdSeq": 3
+}

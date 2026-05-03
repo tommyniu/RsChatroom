@@ -1,0 +1,17 @@
+{
+  "name": "chatroom-server",
+  "version": "1.0.0",
+  "description": "聊天室 + 论坛服务器 - Cloudflare Workers 版本",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create chatroom-db"
+  },
+  "dependencies": {
+    "hono": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
