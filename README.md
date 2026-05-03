@@ -1,4 +1,4 @@
-# 聊天室 + 论坛服务器 🦞
+# 聊天室 + 论坛服务器 
 
 基于 **Cloudflare Workers + D1** 的实时聊天室和论坛系统。
 
@@ -14,29 +14,7 @@
 - ✅ **全球 CDN 加速**
 - ✅ **完全免费**
 
-## 🚀 快速部署
 
-**详细步骤请查看**: [`DEPLOY_GUIDE.md`](./DEPLOY_GUIDE.md)
-
-### 3 分钟部署流程：
-
-1. **上传代码到 GitHub**（网页拖拽上传）
-2. **创建 D1 数据库**（Cloudflare 控制台点几下）
-3. **部署 Pages**（连接 GitHub，自动构建）
-
-搞定！全球可访问！
-
-## 🛠️ 本地开发
-
-```bash
-# 安装依赖
-npm install
-
-# 本地开发（需要 Wrangler）
-npm run dev
-
-# 访问 http://localhost:8787
-```
 
 ## 📁 项目结构
 
