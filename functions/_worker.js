@@ -1,6 +1,8 @@
 export default {
-  async fetch(request, env, ctx) {
-    const workerUrl = "https://chatroom-server.ltc114514191.workers.dev";
-    return fetch(workerUrl + new URL(request.url).pathname + new URL(request.url).search, request);
+  async fetch(request) {
+    const workerOrigin = "https://chatroom-server.ltc114514191.workers.dev";
+    const url = new URL(request.url);
+    const workerUrl = new URL(url.pathname + url.search, workerOrigin);
+    return fetch(workerUrl, request);
   },
 };
